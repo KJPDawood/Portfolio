@@ -1,0 +1,32 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: p1;
+    src: url(fonts/Poppins-Light.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid;  */
+    position: fixed;
+    top: 620px;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: black;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: large;
+    font-family: p1;
+}
