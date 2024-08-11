@@ -9,6 +9,7 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 .nav{
     width: 1200px;
@@ -26,7 +27,46 @@ body{
     background-color: black;
     height: 40px;
     width: 120px;
-    border-radius: 20px;
     font-size: large;
     font-family: p1;
+    border: 1px solid;
+    border-width: 5px;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    animation: glow-shadow 10s infinite linear alternate-reverse;
 }
+@keyframes glow-shadow {
+    0%{
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7) ;
+    }
+    10%{
+        box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.7)   ;
+    }
+    20%{
+        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.7)     ;
+    }
+    30%{
+        box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.7)   ;
+    }
+    40%{
+        box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.7)     ;
+    }
+    50%{
+        box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.7)   ;
+    }
+    60%{
+        box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.7)     ;
+    }
+    70%{
+        box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.7)   ;
+    }
+    80%{
+        box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.7)   ;
+    }
+    90%{
+        box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.7)   ;
+    }
+    100%{
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7) ;
+    }
+};
