@@ -186,7 +186,7 @@ body{
     100%{
         box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7) ;
     }
-}4
+}
 @keyframes text-shadow {
     0%{
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.7) ;
