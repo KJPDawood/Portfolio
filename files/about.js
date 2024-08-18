@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
             colors.style.display = "none";
         }
     }
-
-    // Click event listener for both divs
     color.addEventListener("click", toggleDiv2);
     colors.addEventListener("click", toggleDiv2);
 });
