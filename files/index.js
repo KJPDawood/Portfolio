@@ -41,5 +41,5 @@ color4.addEventListener("click",function () {
 color5.addEventListener("click",function () {
     root.style.setProperty("--gradientColor" ,"black,rgb(255, 166, 0),rgb(255, 166, 0),black,black");
     root.style.setProperty("--textColor" ,"rgb(255, 166, 0)");
-    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgrgb(255, 166, 0)");
+    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(255, 166, 0)");
 });

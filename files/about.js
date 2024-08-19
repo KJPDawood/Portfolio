@@ -40,24 +40,29 @@ color1.addEventListener("click",function () {
     root.style.setProperty("--gradientColor" ,"black,rgb(255, 0, 0),red,black,black");
     root.style.setProperty("--textColor" ,"red");
     root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgba(255, 0, 0)");
+    root.style.setProperty("--imgColor" ," black,red,black,red,black,red,black");
 });
 color2.addEventListener("click",function () {
     root.style.setProperty("--gradientColor" ,"black,rgb(0, 255, 0),rgb(0, 255, 0),black,black");
     root.style.setProperty("--textColor" ,"rgb(0, 255, 0)");
     root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(0, 255, 0)");
+    root.style.setProperty("--imgColor" ," black,rgb(0, 255, 0),black,rgb(0, 255, 0),black,rgb(0, 255, 0),black");
 });
 color3.addEventListener("click",function () {
     root.style.setProperty("--gradientColor" ,"black,rgb(0, 174, 255),rgb(0, 174, 255),black,black");
     root.style.setProperty("--textColor" ,"rgb(0, 174, 255)");
     root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(0, 174, 255)");
+    root.style.setProperty("--imgColor" ," black,rgb(0, 174, 255),black,rgb(0, 174, 255),black,rgb(0, 174, 255),black");
 });
 color4.addEventListener("click",function () {
     root.style.setProperty("--gradientColor" ,"black,rgb(255, 255, 0),rgb(255, 255, 0),black,black");
     root.style.setProperty("--textColor" ,"rgb(255, 255, 0)");
     root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(255, 255, 0)");
+    root.style.setProperty("--imgColor" ," black,rgb(255, 255, 0),black,rgb(255, 255, 0),black,rgb(255, 255, 0),black");
 });
 color5.addEventListener("click",function () {
     root.style.setProperty("--gradientColor" ,"black,rgb(255, 166, 0),rgb(255, 166, 0),black,black");
     root.style.setProperty("--textColor" ,"rgb(255, 166, 0)");
     root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgrgb(255, 166, 0)");
+    root.style.setProperty("--imgColor" ," black,rgb(255, 166, 0),black,rgb(255, 166, 0),black,rgb(255, 166, 0),black");
 });
