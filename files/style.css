@@ -14,8 +14,7 @@
 :root{
     --gradientColor : black,rgb(255, 0, 0),red,black,black;
     --textColor : red;
-    --boxShadow :  0 0 15px 0px rgba(255, 0, 0);
-    --imgColor : black,red,black,red,black,red,black;
+    --boxShadow :  0 0 15px rgba(255, 0, 0);
 }
 body{
     display: flex;
@@ -176,19 +175,35 @@ body{
 }
 .cbtn{
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--textColor);
     border: none;
     padding: 10px;
     cursor: pointer;
+    height: 80px;
+    border:5px solid var(--textColor);
+    border-radius: 40px;
+    font-size: xx-large;
+    font-weight: 600;
+    text-shadow: var(--boxShadow);
 }
 .prev {
     left: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .next {
     right: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 #color{
     width: 50px;
@@ -214,7 +229,6 @@ width: 600px;
 height: 350px;
 flex-flow: column;
 justify-content: space-around;
-animation: lefts 4s ;
 }
 .about-para{
     font-size: 50px;
@@ -308,7 +322,6 @@ animation: lefts 4s ;
     display: flex;
     justify-content: space-between;
     width: 1180px;
-    animation: down 2s;
 }
 .about-pic{
     width: 400px;
@@ -318,8 +331,7 @@ animation: lefts 4s ;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    animation: rights 4s;
-    background-image: linear-gradient(black,var(--textColor),black);
+    background-color: #000;
 }
 .about-pic::before{
     content: "";
