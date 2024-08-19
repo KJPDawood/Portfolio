@@ -17,29 +17,65 @@ document.addEventListener("DOMContentLoaded", function () {
     color.addEventListener("click", toggleDiv2);
     colors.addEventListener("click", toggleDiv2);
 });
+function saveToLocalStorage(gradient, textColor, boxShadow) {
+    localStorage.setItem("gradientColor", gradient);
+    localStorage.setItem("textColor", textColor);
+    localStorage.setItem("boxShadow", boxShadow);
+}
+color1.addEventListener("click", function () {
+    let gradient = "black,rgb(255, 0, 0),red,black,black";
+    let textColor = "red";
+    let boxShadow = "0 0 15px rgba(255, 0, 0)";
+    root.style.setProperty("--gradientColor", gradient);
+    root.style.setProperty("--textColor", textColor);
+    root.style.setProperty("--boxShadow", boxShadow);
+    saveToLocalStorage(gradient, textColor, boxShadow);
+});
+color2.addEventListener("click", function () {
+    let gradient = "black,rgb(0, 255, 0),rgb(0, 255, 0),black,black";
+    let textColor = "rgb(0, 255, 0)";
+    let boxShadow = "0 0 15px rgb(0, 255, 0)";
+    root.style.setProperty("--gradientColor", gradient);
+    root.style.setProperty("--textColor", textColor);
+    root.style.setProperty("--boxShadow", boxShadow);
+    saveToLocalStorage(gradient, textColor, boxShadow);
+});
+color3.addEventListener("click", function () {
+    let gradient = "black,rgb(0, 174, 255),rgb(0, 174, 255),black,black";
+    let textColor = "rgb(0, 174, 255)";
+    let boxShadow = "0 0 15px rgb(0, 174, 255)";
+    root.style.setProperty("--gradientColor", gradient);
+    root.style.setProperty("--textColor", textColor);
+    root.style.setProperty("--boxShadow", boxShadow);
+    saveToLocalStorage(gradient, textColor, boxShadow);
+});
+color4.addEventListener("click", function () {
+    let gradient = "black,rgb(255, 255, 0),rgb(255, 255, 0),black,black";
+    let textColor = "rgb(255, 255, 0)";
+    let boxShadow = "0 0 15px rgb(255, 255, 0)";
+    root.style.setProperty("--gradientColor", gradient);
+    root.style.setProperty("--textColor", textColor);
+    root.style.setProperty("--boxShadow", boxShadow);
+    saveToLocalStorage(gradient, textColor, boxShadow);
+});
+color5.addEventListener("click", function () {
+    let gradient = "black,rgb(255, 166, 0),rgb(255, 166, 0),black,black";
+    let textColor = "rgb(255, 166, 0)";
+    let boxShadow = "0 0 15px rgb(255, 166, 0)";
+    root.style.setProperty("--gradientColor", gradient);
+    root.style.setProperty("--textColor", textColor);
+    root.style.setProperty("--boxShadow", boxShadow);
+    saveToLocalStorage(gradient, textColor, boxShadow);
+});
+function loadFromLocalStorage() {
+    let gradient = localStorage.getItem("gradientColor");
+    let textColor = localStorage.getItem("textColor");
+    let boxShadow = localStorage.getItem("boxShadow");
 
-color1.addEventListener("click",function () {
-    root.style.setProperty("--gradientColor" ,"black,rgb(255, 0, 0),red,black,black");
-    root.style.setProperty("--textColor" ,"red");
-    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgba(255, 0, 0)");
-});
-color2.addEventListener("click",function () {
-    root.style.setProperty("--gradientColor" ,"black,rgb(0, 255, 0),rgb(0, 255, 0),black,black");
-    root.style.setProperty("--textColor" ,"rgb(0, 255, 0)");
-    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(0, 255, 0)");
-});
-color3.addEventListener("click",function () {
-    root.style.setProperty("--gradientColor" ,"black,rgb(0, 174, 255),rgb(0, 174, 255),black,black");
-    root.style.setProperty("--textColor" ,"rgb(0, 174, 255)");
-    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(0, 174, 255)");
-});
-color4.addEventListener("click",function () {
-    root.style.setProperty("--gradientColor" ,"black,rgb(255, 255, 0),rgb(255, 255, 0),black,black");
-    root.style.setProperty("--textColor" ,"rgb(255, 255, 0)");
-    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(255, 255, 0)");
-});
-color5.addEventListener("click",function () {
-    root.style.setProperty("--gradientColor" ,"black,rgb(255, 166, 0),rgb(255, 166, 0),black,black");
-    root.style.setProperty("--textColor" ,"rgb(255, 166, 0)");
-    root.style.setProperty("--boxShadow" ,"0 0 15px 0px rgb(255, 166, 0)");
-});
+    if (gradient && textColor && boxShadow) {
+        root.style.setProperty("--gradientColor", gradient);
+        root.style.setProperty("--textColor", textColor);
+        root.style.setProperty("--boxShadow", boxShadow);
+    }
+}
+loadFromLocalStorage();

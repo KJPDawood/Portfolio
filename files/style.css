@@ -53,7 +53,6 @@ body{
     width: 125px;
     height: 45px;
     position: absolute;
-    background-color: red;
     border-radius: 20px;
     z-index: -1;
     animation: rotate-bg 3s infinite;
@@ -140,7 +139,6 @@ body{
     width: 415px;
     height: 415px;
     position: absolute;
-    background-color: red;
     border-radius: 50%;
     z-index: -1;
     transform: translate(-7px,-7px);
@@ -216,7 +214,6 @@ body{
     width: 56px;
     height: 56px;
     position: absolute;
-    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     z-index: -1;
     transform: translate(-3px,-4px);
@@ -252,7 +249,6 @@ justify-content: space-around;
 .skills::before,.hobby::before{
     content: '';
     position: absolute;
-    background-color: red;
     z-index: -1;
     animation: rotate-bg 3s infinite;
 }
@@ -407,6 +403,9 @@ justify-content: space-around;
 .inter,.matric{
     text-transform: capitalize;
     font-family: p1;
+}
+.inter:hover .h3:not(:hover),.matric:hover .h3:not(:hover){
+    color: var(--textColor);
 }
 #spic2{
     width: 400px;
@@ -880,8 +879,6 @@ justify-content: space-around;
     }
 }
 @keyframes pop {
-    from{
-        opacity: 0;
-    }
-    to{opacity: 1;}
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
