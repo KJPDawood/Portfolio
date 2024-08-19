@@ -319,14 +319,13 @@ animation: lefts 4s ;
     align-items: center;
     flex-flow: column;
     animation: rights 4s;
-    background-image: conic-gradient(var(--imgColor));
+    background-image: linear-gradient(black,var(--textColor),black);
 }
 .about-pic::before{
     content: "";
     width: 415px;
     height: 415px;
     position: absolute;
-    background-color: red;
     border-radius: 50%;
     z-index: -1;
     animation: rotate-bg 3s infinite;
