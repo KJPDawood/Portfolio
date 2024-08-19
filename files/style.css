@@ -23,7 +23,7 @@ body{
 }
 .ibody,.abody{
     background-image: url("pics/solid-black-background-for-studio-room-or-website-template-photo.jpg");
-    background-size: 1600px;
+    background-size: 1700px;
 }
 .nav{
     width: 1200px;
@@ -31,7 +31,7 @@ body{
     justify-content: space-evenly;
     /* border: 1px solid;  */
     position: fixed;
-    top: 620px;
+    top: 650px;
     animation: ups 2s;
     align-items: center;
 }
