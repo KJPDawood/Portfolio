@@ -94,7 +94,7 @@ body{
     width: 1200px;
     height: 400px;
     position: relative;
-    top: 100px;
+    top: 120px;
     animation: down 2s;
 }
 .head{
@@ -105,6 +105,7 @@ body{
 #heading{
     font-family: p2;
     color: var(--textColor);
+    text-shadow: var(--boxShadow);
 }
 .intro-para{
     font-family: p1;
@@ -215,7 +216,7 @@ body{
 #color{
     width: 50px;
     height: 50px;
-    background-color: var(--textColor);
+    background-image: conic-gradient(rgb(255, 0, 0),rgb(0, 255, 0),rgb(0, 174, 255),rgb(255, 255, 0),aquamarine,red);
     border-radius: 50%;
 }
 #color::before{
@@ -328,6 +329,8 @@ justify-content: space-around;
     display: flex;
     justify-content: space-between;
     width: 1180px;
+    position: relative;
+    top: 30px;
 }
 .about-pic{
     width: 400px;
@@ -411,7 +414,7 @@ justify-content: space-around;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(255, 166, 0);
+    background-color: aquamarine ;
 }
 .colorss:hover{
     border: 3px solid var(--textColor);
@@ -542,6 +545,38 @@ justify-content: space-around;
     border-radius: 32px;
     z-index: -1;
     animation: rotate-bg 3s infinite;   
+}
+#cont-pic{
+    width: 600px;
+    position: relative;
+    left: 80px;
+    animation: lefts 4s;
+}
+.cv{
+    width: 150px;
+    height: 50px;
+    background-color: #000  ;
+    border-radius: 40px;
+    margin-top: 15px;
+    margin-left: 5px;
+    border: none;
+}
+.cv::before{
+    content: "";
+    width: 161px;
+    height: 61px;
+    position: absolute;
+    background-image: conic-gradient(var(--gradientColor)); 
+    border-radius: 32px;
+    z-index: -1;
+    transform: translate(-29px,-17px);
+    animation: rotate-bg 3s infinite;  
+}
+.cvi{
+    text-decoration: none;
+    font-family: p1;
+    font-weight: 600;
+    font-size: large;
 }
 @keyframes glow-shadow {
     0%{

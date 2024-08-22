@@ -6,12 +6,6 @@ const color3 = document.getElementById("sky-blue");
 const color4 = document.getElementById("yellow");
 const color5 = document.getElementById("orange");
 const root = document.documentElement;
-const img1 = document.getElementById("img1");
-const img2 = document.getElementById("img2");
-const img3 = document.getElementById("img3");
-const img4 = document.getElementById("img4");
-const img5 = document.getElementById("img5");
-const img6 = document.getElementById("img6");
 document.addEventListener("DOMContentLoaded", function () {
     function toggleDiv2() {
         if (colors.style.display === "none" || colors.style.display === "") {
@@ -65,9 +59,9 @@ color4.addEventListener("click", function () {
     saveToLocalStorage(gradient, textColor, boxShadow);
 });
 color5.addEventListener("click", function () {
-    let gradient = "black,rgb(255, 166, 0),rgb(255, 166, 0),black,black";
-    let textColor = "rgb(255, 166, 0)";
-    let boxShadow = "0 0 15px rgb(255, 166, 0)";
+    let gradient = "black,aquamarine,aquamarine,black,black";
+    let textColor = "aquamarine";
+    let boxShadow = "0 0 15px aquamarine";
     root.style.setProperty("--gradientColor", gradient);
     root.style.setProperty("--textColor", textColor);
     root.style.setProperty("--boxShadow", boxShadow);
@@ -85,8 +79,3 @@ function loadFromLocalStorage() {
     }
 }
 loadFromLocalStorage();
-img1.addEventListener("click",function(){
-    img1.style.width = "1350px"
-    img2.style.display = "none"
-    img3.style.display = "none"
-})

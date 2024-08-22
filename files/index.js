@@ -59,9 +59,9 @@ color4.addEventListener("click", function () {
     saveToLocalStorage(gradient, textColor, boxShadow);
 });
 color5.addEventListener("click", function () {
-    let gradient = "black,rgb(255, 166, 0),rgb(255, 166, 0),black,black";
-    let textColor = "rgb(255, 166, 0)";
-    let boxShadow = "0 0 15px rgb(255, 166, 0)";
+    let gradient = "black,aquamarine,aquamarine,black,black";
+    let textColor = "aquamarine";
+    let boxShadow = "0 0 15px aquamarine";
     root.style.setProperty("--gradientColor", gradient);
     root.style.setProperty("--textColor", textColor);
     root.style.setProperty("--boxShadow", boxShadow);
