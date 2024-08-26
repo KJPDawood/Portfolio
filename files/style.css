@@ -26,7 +26,9 @@ body{
     background-size: 1700px;
 }
 .pbody{
-    background-image: url("pics/black-trianglify-b6181ec2.webp");
+    background-image: url("pics/black-4980535_1280.jpg");
+    background-size: 1300px;
+    background-position-x: 100px;
     justify-content: space-between;
     flex-flow: column;
 }
@@ -76,9 +78,13 @@ body{
     transform: translate(-26px,-9px);
 }
 .pic{ 
-    border-radius: 50%;
     width: 400px;
     height: 400px;
+    rotate: -45deg;
+    filter: drop-shadow(0px 0px 10px var(--textColor) );
+    position: relative;
+    bottom: 23px;
+    right: 23px;
 }
 .links-pic{
     display: flex;
@@ -141,18 +147,16 @@ body{
     justify-content: space-between;
 }
 .pro-pic{
+    rotate: 45deg;
+    overflow: hidden;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 0px solid none;
+    box-shadow: 12px 12px 10px var(--textColor);
+    border-top: none;
+    border-left: none;
     animation: lefts 4s ;
-}
-.pro-pic::before{
-    content: "";
-    width: 415px;
-    height: 415px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-image: conic-gradient(var(--gradientColor));
-    transform: translate(-7px,-7px);
-    animation: rotate-bg 3s infinite;
 }
 .abody {
     display: flex;
@@ -171,6 +175,8 @@ body{
     transition: transform 0.5s ease-in-out;
     width: 1200px;
     height: 400px;
+    display: flex;
+    align-items: center;
 }
 .carousel-item {
     min-width: 100%;
@@ -261,7 +267,7 @@ justify-content: space-around;
     content: '';
     position: absolute;
     z-index: -1;
-    animation: rotate-bg 3s infinite;
+    animation: rotate-bg 3s infinite;  
 }
 .skills:hover,.hobby:hover{
     background-color: var(--textColor);
@@ -367,6 +373,7 @@ justify-content: space-around;
     right: 145px;
     display:none;
     background-color: rgb(0, 0, 0);
+    animation: pop 0.5s ease-in-out;
 }
 .colors::before{
     content: "";
@@ -546,37 +553,55 @@ justify-content: space-around;
     z-index: -1;
     animation: rotate-bg 3s infinite;   
 }
-#cont-pic{
-    width: 600px;
+.cont-pic{
+    width: 350px;
+    height: 400px;
     position: relative;
-    left: 80px;
-    animation: lefts 4s;
+    bottom: 38px;
+    left: 17px;
+    filter: drop-shadow(0 0 7px var(--textColor));
+    rotate: -45deg;
 }
 .cv{
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
     background-color: #000  ;
-    border-radius: 40px;
+    border-radius: 10px;
     margin-top: 15px;
-    margin-left: 5px;
-    border: none;
+    border: 4px double var(--textColor);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
 }
-.cv::before{
-    content: "";
-    width: 161px;
-    height: 61px;
-    position: absolute;
-    background-image: conic-gradient(var(--gradientColor)); 
-    border-radius: 32px;
-    z-index: -1;
-    transform: translate(-29px,-17px);
-    animation: rotate-bg 3s infinite;  
+.para{
+    margin-top: 30px;
 }
 .cvi{
     text-decoration: none;
     font-family: p1;
     font-weight: 600;
     font-size: large;
+}
+.cus{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: p1;
+}
+.cus:hover{
+    color: var(--textColor);
+}
+.cimg{
+    width: 16px;
+    margin-right: 10px;
+}
+.contacts{
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+    display: flex; 
+    justify-content: space-between;
+    flex-flow: row-reverse;
 }
 @keyframes glow-shadow {
     0%{
@@ -992,4 +1017,230 @@ justify-content: space-around;
 @keyframes pop {
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+@media screen and (max-width : 1277px){
+    .head,.about-para{
+        font-size: 45px;
+    }
+    .intro-para {
+        font-size: 25px;
+    }
+    .link-img{
+        height: 45px;
+        width: 45px;
+    }
+    .para {
+        width: 550px;
+    }
+    .intro{
+        width: 512px;
+        height: 300px;
+    }
+    .pic{
+        width: 300px;
+        height: 300px;
+        bottom: 13px;
+        right: 13px;
+    }
+    .cont-pic{
+        width: 300px;
+        height: 350px;
+        bottom: 46px;
+        left: 4px;
+    }
+    .pro-pic{
+        width: 250px;
+        height: 250px;
+    }
+    .about-pic{
+        width: 350px;
+        height: 350px;
+    }
+    .about-pic::before{
+        width: 363px;
+        height: 363px;
+        transform: translate(-6px)
+        translateY(-5px);
+    }
+    .home-cont{
+    width: 900px;
+    position: relative;
+    top: 130px;
+    }
+    body {
+        background-position-x: 1206px;
+    }
+    .nav{
+        width:960px ;
+    }
+    .btn{
+    height: 35px;
+    width: 110px;
+    }
+    .btn::before{
+        width: 113px;
+        height: 38px;
+        transform: translate(-30px, -5px);
+    }
+    .btnc::before,.btnp::before{
+        transform: translate(-21px, -5px);
+    }
+    #red,#green,#yellow,#sky-blue,#orange{
+    width: 45px;
+    height: 45px;
+    }
+    .colors{
+    width:  280px;
+    height: 55px; 
+    top: 560px;
+    right: 26px;  
+    }
+    .colors::after{
+        width: 290px;
+        height: 60px;
+    }
+    .colors::before{
+    width: 305px;
+    height: 70px;
+    }
+    .about-cont{
+        width: 900px;
+        margin-left: 60px;
+    }
+    .about-secondpara{
+        font-size: medium;
+    }
+    .skills,.hobby{
+        padding: 7.5px 15px;
+        margin: 4px;
+    }
+    #html::before{
+        width: 75px;
+        height: 45px;
+        transform: translate(-18px, -10px);
+    }
+    #css::before{
+    width: 67px;
+    height: 44px;
+    transform: translate(-18px, -10px);
+    }
+    #js::before{
+    width: 131px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #bootstrap::before{
+    width: 125px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #github::before{
+    width:91px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #photography::before{
+    width: 150px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #ceh::before{
+    width: 238px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #mr::before{
+    width: 172px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #Canva::before{
+    width: 90px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    .about-secondpara,.about-left{
+        width: 516px;
+    }
+    .cbtn{
+        height: 60px;
+        font-size: x-large;
+        top: 43%;
+        padding: 8px;
+    }
+    .about-pic::before{
+        transform: translate(0px);
+    }
+    #spic,#spic3{
+        width: 200px;
+    }
+    #anime::before{
+    width: 83px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #cricket::before {
+        width: 99px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #gaming::before {
+        width: 100px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #programming::before {
+        width: 154px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #songs::before {
+        width: 90px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #cr::before {
+        width: 176px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #chess::before {
+        width: 85px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #pr::before {
+    width: 163px;
+    height: 43px;
+    transform: translate(-18px, -10px);
+    }
+    #pw::before {
+        width: 161px;
+        height: 43px;
+        transform: translate(-18px, -10px);
+    }
+    #spic2{
+        width: 250px;
+        height: 250px;
+    }
+    .pbody{
+    background-position-x: -60px;
+    }
+    .img-proj {
+        width: 220px;
+        padding: 7.5px;
+    }
+    .img-div::before{
+    width: 295px;
+    height: 250px;
+    }
+    .proj-img{
+        width: 1050px;
+    }
+    .js-proj{
+        margin-top: 205px;
+    }
+    .para{
+        width: 510px;
+    }
 }
