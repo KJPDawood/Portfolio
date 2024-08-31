@@ -79,3 +79,31 @@ function loadFromLocalStorage() {
     }
 }
 loadFromLocalStorage();
+function nav() {
+    var tablet = window.matchMedia("(max-width : 913px)")
+    var btn = document.getElementsByClassName("btn")
+    if (tablet.matches) {
+        if (btn[3].style.display = "block") {
+            btn[0].style.display = "none"
+            btn[3].style.display = "block"
+            setInterval(() => {
+                btn[3].style.display = "none"
+                btn[0].style.display = "block"
+                btn[1].style.display = "none"
+                setTimeout(() => {
+                    btn[1].style.display = "none"
+                    btn[0].style.display = "block"
+                }, 500);
+                setTimeout(() => {
+                    btn[0].style.display = "none"
+                    btn[2].style.display = "block"
+                }, 2000);
+                setTimeout(() => {
+                    btn[2].style.display = "none"
+                    btn[1].style.display = "block"
+                }, 3500);
+            }, 5000);
+        }
+    }
+}
+nav()
