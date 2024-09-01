@@ -13,7 +13,9 @@ const root = document.documentElement;
 var spic = document.getElementById("spic");
 var spic3 = document.getElementById("spic3");
 var count = 0;
-var skills = document.getElementsByClassName("skills");
+var count2 = 0;2
+var skil
+count2++;ls = document.getElementsByClassName("skills");
 var hobby = document.getElementsByClassName("hobby");
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -178,7 +180,8 @@ setInterval(function () {
     }
 },2000);
 setInterval(function () {
-    if (count === 0) {
+    if (count2 === 0) {
+        count2++;
         spic3.src = "pics/cartoon.png";
         spic3.style.backgroundColor = "white";
         spic3.style.borderRadius = "30px"
@@ -187,49 +190,57 @@ setInterval(function () {
         hobby[0].style.backgroundColor = "var(--textColor)";
         spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 1) {
+    } else if (count2 === 1) {
+        count2++;
         hobby[0].style.backgroundColor = "black"
         hobby[1].style.backgroundColor = "var(--textColor)"
          spic3.src = "pics/throw.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 2) {
+    } else if (count2 === 2) {
+        count2++;
         hobby[1].style.backgroundColor = "black"
         hobby[2].style.backgroundColor = "var(--textColor)"
          spic3.src = "pics/games.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000) 
-    } else if (count === 3) {
+    } else if (count2 === 3) {
+        count2++;
         hobby[2].style.backgroundColor = "black"
         hobby[3].style.backgroundColor = "var(--textColor)"
         spic3.src = "pics/programming.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 4) {
+    } else if (count2 === 4) {
+        count2++;
         hobby[3].style.backgroundColor = "black"
         hobby[4].style.backgroundColor = "var(--textColor)"
          spic3.src = "pics/music.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 5) {
+    } else if (count2 === 5) {
+        count2++;
         hobby[4].style.backgroundColor = "black"
         hobby[5].style.backgroundColor = "var(--textColor)"
         spic3.src = "pics/content-writing.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 6) {
+    } else if (count2 === 6) {
+        count2++;
         hobby[5].style.backgroundColor = "black"
         hobby[6].style.backgroundColor = "var(--textColor)"
          spic3.src = "pics/chess.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 7) {
+    } else if (count2 === 7) {
+        count2++;
         hobby[6].style.backgroundColor = "black"
         hobby[7].style.backgroundColor = "var(--textColor)"
          spic3.src = "pics/poetry-symbol-of-a-feather-in-ink-container.png";
                 spic3.style.animation = "pop 1s"
         setTimeout(function () {spic3.style.animation = ""},1000)
-    } else if (count === 8) {
+    } else if (count2 === 8) {
+        count2 = 0;
         hobby[7].style.backgroundColor = "black"
         hobby[8].style.backgroundColor = "var(--textColor)"
          spic3.src = "pics/poetry.png";

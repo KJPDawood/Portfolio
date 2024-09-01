@@ -1413,3 +1413,142 @@ justify-content: space-around;
         height: 270px;
     }
 }
+@media screen and (max-width : 426px){
+    body{
+        width: 426px;
+    }
+    .head,.about-para{
+        font-size: 40px;
+    }
+    .intro-para {
+        font-size: 20px;
+    }
+    .intro{
+        height: 180px;
+    }
+    .pic{
+        width: 300px;
+        height: 300px;
+        bottom: 13px;
+        right: 13px;
+    }
+    #spic4,#spic5{
+        width: 200px;
+    }
+    .cont-pic{
+        width: 250px;
+        height: 300px;
+        bottom: 33px;
+    }
+    .pro-pic{
+        width: 250px;
+        height: 250px;
+        animation: pop 4s;
+    }
+    .about-cont2{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        margin-top: 90px;
+    }
+    .home-cont{
+        height: 525px;
+    }
+    .cont-cont{
+        top: 100px;
+        height: 575px;
+    }
+    .nav-main{
+        width: 430px;
+    }
+    .nhead{
+        display: inline;
+        animation: down 4s;
+        font-size: 35px;
+    }
+    .nav{
+        width: 170px;
+    }
+    .btn{
+    height: 30px;
+    width: 120px;
+    border-radius: 11px;
+    font-size: medium;
+    }
+    .btni{
+        display: block;
+    }
+    .btn::before{
+        content: none;
+    }
+    #color{
+        width: 35px;
+        height: 35px;
+    }
+    #color::before{
+        width: 41px;
+        height: 41px;
+        transform: translate(-3px,-3px);
+    }
+    .colors{
+    width:  280px;
+    height: 55px; 
+    top: 212px;
+        right: -83px;
+        rotate: 90deg;
+        animation: rights 1s;
+        z-index: 988;
+    }
+    .about-cont{
+        width: 500px;
+        flex-flow: column-reverse;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .about-secondpara,.about-left{
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+    .pbody{
+    padding-top: 100px;
+    }
+    .img-proj {
+        width: 150px;
+        padding: 5px;
+    }
+    .img-div::before{
+        width: 212px;
+        height: 200px;
+    }
+    .divx{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .proj-img{
+        width: 750px;
+    }
+    .css-proj,.js-proj{
+        height: 300px;
+    }
+    .js-proj{
+        margin: 0px;
+    }
+    .para{
+        width: 405px;
+    }
+    .contacts{
+        width: 365px;
+    }
+    .cus{
+        margin-left: 10px;
+    }
+    .cpic{
+        width: 220px;
+        height: 220px;
+    }
+    .cintro{
+        height: 270px;
+    }
+}
